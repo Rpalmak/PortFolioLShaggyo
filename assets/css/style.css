@@ -157,6 +157,7 @@ header {
 main {
     display: flex;
     flex-direction: column;
+    align-items: center; /* Añadido para centrar verticalmente el contenido */
 }
 
 .container-home {
@@ -166,27 +167,27 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .home {
-    background: url(../img/img-home.jpg)no-repeat;
+    background: url(../img/img-home.jpg) no-repeat;
     background-size: cover;
-    height: 700px;
     width: 80%;
     display: flex;
+    align-items: center; /* Añadido para centrar verticalmente el contenido */
 }
 
 .content {
     width: 70%;
-    height: 100%;
-    background-color: transparent;
     padding: 80px;
     color: var(--wh);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
+
+/* Resto del código CSS... */
+
 
 .content .logo {
     display: flex;
@@ -257,6 +258,7 @@ main {
     justify-content: center;
     padding: 10px;
     font-size: 3rem;
+    
 }
 
 .title-about-me span {
@@ -272,13 +274,11 @@ main {
     animation-iteration-count: infinite;
 }
 
-@keyframes typing {
-    from {width: 0}    
-}
-
-@keyframes blink {
-    50% {border-color: transparent}
-}
+.typed-cursor {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
 
 .container-img {
     width: 100%;
